@@ -7,6 +7,7 @@ import {
 } from 'react-router-dom';
 import Machines from './Machines';
 import './App.css';
+import ViewMachine from './components/ViewMachine';
 
 function App () {
 	return (
@@ -22,9 +23,8 @@ function App () {
 				</nav>
 
 				<Switch>
-					<Route path='/machines'>
-						<Machines />
-					</Route>
+					<Route exact path='/machines' component={Machines} />
+					<Route exact path='/machines/:machineId' component={ViewMachine} />
 				</Switch>
 			</div>
 		</Router>
