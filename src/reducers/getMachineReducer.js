@@ -1,8 +1,8 @@
 import { createAction, handleActions } from 'redux-actions';
 
-const GET_ALL_MACHINES = 'machine/GET_ALL_MACHINES';
-const UPDATE_MACHINE_NAME = 'machine/UPDATE_MACHINE_NAME';
-const UPDATE_HEALTH = 'machine/UPDATE_HEALTH';
+const GET_ALL_MACHINES = 'GET_ALL_MACHINES';
+const UPDATE_MACHINE_NAME = 'UPDATE_MACHINE_NAME';
+const UPDATE_HEALTH = 'UPDATE_HEALTH';
 
 export const getAllMachines = createAction(GET_ALL_MACHINES);
 export const updateMachineName = createAction(UPDATE_MACHINE_NAME);
